@@ -151,4 +151,4 @@ MIT License — feel free to use, modify, and share!
 ## 📢 Credits
 
 - [Murf AI](https://murf.ai/) for the TTS magic.  
-- Built with ❤️ by [Prasanna Lakshmi]
+- Built with ❤️ by Prasanna Lakshmi
