@@ -38,7 +38,7 @@ def narrate_story(request):
         # IMPORTANT: Replace "YOUR_MURF_API_KEY" with your actual Murf API key.
         # It's highly recommended to store API keys in environment variables
         # (e.g., using python-dotenv or Django settings) rather than hardcoding.
-        murf_api_key = os.environ.get("MURF_API_KEY", "ap2_e2da2b7c-45e8-469d-a66e-56dc439ab83e")
+        murf_api_key = os.environ.get("MURF_API_KEY", "####")
         
         try:
             client = Murf(api_key=murf_api_key)
@@ -62,5 +62,6 @@ def narrate_story(request):
         except Exception as e:
             # Catch any other exceptions from the SDK or network issues
             return JsonResponse({'error': f'An unexpected error occurred: {str(e)}'}, status=500)
+
 
     return JsonResponse({'error': 'Invalid request method. Only POST is allowed.'}, status=400)
